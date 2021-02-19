@@ -110,6 +110,18 @@
         </plugins>
     </build>
 
+	<profiles>
+		<profile>
+			<id>openshift</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<finalName>ROOT</finalName>
+			</build>
+		</profile>
+	</profiles>
+
     <repositories>
         <repository>
             <id>red-hat-ga-repository</id>
